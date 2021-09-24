@@ -1,0 +1,120 @@
+.App {
+    background-color: rgb(50, 50, 170);
+    min-height: 100vh;
+    font-size: calc(10px +2vmin);
+    color:rgb(255, 255, 255);
+    padding:15px;
+}
+
+.switchOn {
+    text-align: center;
+    border: 1px solid rgb(247, 247, 247);
+    border-radius: 7px;
+    margin-bottom: 10px;
+    background: transparent;
+    
+    
+}
+.switchOn,button {
+    background: transparent;
+    text-align:center;
+    border-radius: 7px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.current-weather {
+     background: rgb(143, 175, 227);
+     border-radius: 7px;
+
+     
+    &__content {
+    text-align: center;
+    margin:30px;
+    }
+
+    &__temp {
+    text-align: center;
+    font-size: 50px;
+    }
+
+    &__info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 15px;
+    }
+
+}
+
+.hourly-forecast {
+    background: #fd9a80;
+    border-radius: 7px;
+    display: block;
+    padding: 10px;
+    
+    &__title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    &__item {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        overflow-x: scroll;
+
+                /* width */
+        &::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+    }
+    &__time, &__temp, &__weather, &__wind {
+        margin: 8px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+.daily {
+    background: rgb(143, 175, 227);
+    border-radius: 7px;
+
+    &-title {
+        text-align: center;
+        font-size:30px;
+    }
+    &__content {
+        display: flex;
+        justify-content:space-between;
+        margin: 40px;
+        padding: 10px;
+    }
+}
